@@ -1,16 +1,18 @@
-# React + Vite
+This is a small React + Vite demo app showing:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Offline-first inspections using `localStorage`
+- Pending sync queue and manual sync when back online
+- Simulated push notifications from the "server"
+- Responsive layout for desktop + mobile, including mobile footer controls
+- Online/offline status, last sync time, and sync indicators per inspection
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Mobile data storage & offline sync** – inspections are stored in `localStorage` with a pending sync queue when offline.
+- **Online re-synchronization** – when the app is back online, the Sync button (and auto-sync on reconnect) marks pending inspections as synced and updates the UI.
+- **Push updates / stale data signals** – a simulated notification system periodically pushes alerts/updates from the “server”.
+- **Cross-device compatibility** – responsive layout with a desktop header and mobile bottom bar, tested on both large and small screens.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This project was created as a **code sample for evaluation** and is not intended as production-ready software.
