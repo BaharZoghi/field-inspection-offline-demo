@@ -15,4 +15,14 @@ This is a small React + Vite demo app showing:
 
 ---
 
+## Screenshots
+
+### Desktop view
+
+![Desktop dashboard](Screenshots/Large_Screen.png)
+
+### Mobile controls
+
+![Mobile footer controls](Screenshots/Phone_Screen.png)
+
 This project was created as a **code sample for evaluation** and is not intended as production-ready software.
